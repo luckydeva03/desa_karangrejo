@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@headlessui/vue": "^1.7.23",
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/container-queries": "^0.1.1",
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/typography": "^0.5.16",
+        "@tailwindcss/vite": "^4.0.0",
+        "@types/node": "^24.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.38.0",
+        "@typescript-eslint/parser": "^8.38.0",
+        "alpinejs": "^3.4.2",
+        "autoprefixer": "^10.4.2",
+        "axios": "^1.8.2",
+        "concurrently": "^9.0.1",
+        "eslint": "^9.32.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.3",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.4.31",
+        "prettier": "^3.6.2",
+        "tailwindcss": "^3.1.0",
+        "typescript": "^5.8.3",
+        "vite": "^6.2.4"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "aos": "^2.3.4",
+        "chart.js": "^4.5.0",
+        "dayjs": "^1.11.13",
+        "lodash": "^4.17.21",
+        "moment": "^2.30.1",
+        "sweetalert2": "11.4.8",
+        "swiper": "^11.2.10"
+    }
+}

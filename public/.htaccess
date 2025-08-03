@@ -1,0 +1,99 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    # Prevent access to sensitive files
+    <FilesMatch "\.(env|htaccess|htpasswd|ini|log|sh|sql|conf|bak|backup)$">
+        Require all denied
+    </FilesMatch>
+    
+    # Security Headers
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # HSTS (only in production)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # Hide server information
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# Deny access to sensitive files
+<Files ".env">
+    Require all denied
+</Files>
+
+<Files ".env.production">
+    Require all denied
+</Files>
+
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+<Files "composer.json">
+    Require all denied
+</Files>
+
+<Files "composer.lock">
+    Require all denied
+</Files>
+
+<Files "artisan">
+    Require all denied
+</Files>
+
+<Files "deploy_production.php">
+    Require all denied
+</Files>
+
+# Deny access to directories
+<DirectoryMatch "^.*(storage|bootstrap|config|database|resources|routes|tests|vendor|app).*">
+    Require all denied
+</DirectoryMatch>
+
+# Prevent access to backup files
+<FilesMatch "\.(bak|backup|sql|dump)$">
+    Require all denied
+</FilesMatch>
+
+# Enable compression (if available)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/css text/javascript text/html text/plain text/xml application/javascript application/x-javascript
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
