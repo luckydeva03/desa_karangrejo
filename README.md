@@ -123,9 +123,6 @@ npm run dev
 4. Run tests
 5. Submit a pull request
 
-## License
-
-This project is open-sourced software licensed under the [MIT license](LICENSE).
 
 ## Support
 
