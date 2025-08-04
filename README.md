@@ -4,7 +4,7 @@ Website berbasis Laravel untuk administrasi dan portal informasi Desa Karangrejo
 
 
 
-Uploading 2025-08-04 15-50-49.mp4…
+https://github.com/user-attachments/assets/9ed2b535-562b-4bd3-9dd3-cea1f2d6bca0
 
 
 
