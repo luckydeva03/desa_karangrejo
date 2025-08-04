@@ -1,68 +1,68 @@
-# Desa Karangrejo Website
+# Website Desa Karangrejo
 
-Laravel-based website for Desa Karangrejo administration and information portal.
+Website berbasis Laravel untuk administrasi dan portal informasi Desa Karangrejo.
 
-## About
+## Tentang Aplikasi
 
-This is a Laravel 12 application built for village administration management, featuring:
+Aplikasi Laravel 12 yang dibangun untuk manajemen administrasi desa dengan fitur:
 
-- **Content Management System** for village announcements and information
-- **Gallery Management** for photos and documentation
-- **Village Data Management** for demographic and administrative data
-- **User Management** with role-based permissions
-- **Contact System** for citizen inquiries
-- **Responsive Design** with Tailwind CSS
+- **Sistem Manajemen Konten** untuk pengumuman dan informasi desa
+- **Manajemen Galeri** untuk foto dan dokumentasi
+- **Manajemen Data Desa** untuk data demografi dan administratif
+- **Manajemen Pengguna** dengan sistem role dan permission
+- **Sistem Kontak** untuk pertanyaan warga
+- **Desain Responsif** dengan Tailwind CSS
 
-## Technology Stack
+## Teknologi yang Digunakan
 
 - **Backend**: Laravel 12, PHP 8.2+
 - **Frontend**: Blade Templates, Alpine.js, Tailwind CSS
 - **Database**: MySQL
 - **Build Tools**: Vite
-- **Additional Libraries**: 
+- **Library Tambahan**: 
   - Spatie Laravel Permission (roles & permissions)
   - Spatie Laravel Activitylog (audit trail)
   - Spatie Laravel Backup
-  - Intervention Image (image processing)
+  - Intervention Image (pemrosesan gambar)
   - Laravel Telescope (debugging)
-  - DataTables (data display)
+  - DataTables (tampilan data)
 
-## Requirements
+## Kebutuhan Sistem
 
-- PHP 8.2 or higher
+- PHP 8.2 atau lebih tinggi
 - Composer
 - Node.js & NPM
 - MySQL/MariaDB
 
-## Installation
+## Instalasi
 
-1. **Clone the repository**
+1. **Clone repository**
    ```bash
    git clone <repository-url>
    cd desa-karangrejo
    ```
 
-2. **Install PHP dependencies**
+2. **Install dependensi PHP**
    ```bash
    composer install
    ```
 
-3. **Install Node dependencies**
+3. **Install dependensi Node**
    ```bash
    npm install
    ```
 
-4. **Environment setup**
+4. **Setup environment**
    ```bash
    cp .env.example .env
    php artisan key:generate
    ```
 
-5. **Configure database**
-   - Update `.env` file with your database credentials
-   - Create database
+5. **Konfigurasi database**
+   - Update file `.env` dengan kredensial database Anda
+   - Buat database baru
 
-6. **Run migrations and seeders**
+6. **Jalankan migrasi dan seeder**
    ```bash
    php artisan migrate --seed
    ```
@@ -72,61 +72,61 @@ This is a Laravel 12 application built for village administration management, fe
    npm run build
    ```
 
-8. **Create storage link**
+8. **Buat symbolic link storage**
    ```bash
    php artisan storage:link
    ```
 
 ## Development
 
-Start development servers:
+Menjalankan server development:
 
 ```bash
-# Laravel development server
+# Server Laravel development
 php artisan serve
 
-# Vite development server (in another terminal)
+# Server Vite development (di terminal terpisah)
 npm run dev
 ```
 
-## Features
+## Fitur
 
-### Admin Panel
-- Dashboard with statistics
-- Content management (posts, pages, announcements)
-- Gallery management
-- User management with roles
-- Village data management
-- Settings configuration
+### Panel Admin
+- Dashboard dengan statistik
+- Manajemen konten (artikel, halaman, pengumuman)
+- Manajemen galeri
+- Manajemen pengguna dengan roles
+- Manajemen data desa
+- Konfigurasi pengaturan
 
-### Public Website
-- Homepage with village information
-- News and announcements
-- Photo gallery
-- Village data display
-- Contact form
+### Website Publik
+- Homepage dengan informasi desa
+- Berita dan pengumuman
+- Galeri foto
+- Tampilan data desa
+- Form kontak
 
-## Security Features
+## Fitur Keamanan
 
-- Role-based access control
-- CSRF protection
-- XSS protection
-- SQL injection prevention
-- Activity logging
-- Secure file uploads
+- Kontrol akses berbasis role
+- Proteksi CSRF
+- Proteksi XSS
+- Pencegahan SQL injection
+- Logging aktivitas
+- Upload file yang aman
 
-## Contributing
+## Kontribusi
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests
-5. Submit a pull request
+1. Fork repository ini
+2. Buat feature branch
+3. Lakukan perubahan
+4. Jalankan testing
+5. Submit pull request
 
-## License
+## Lisensi
 
-This project is open-sourced software licensed under the [MIT license](LICENSE).
+Proyek ini adalah open-source software dengan lisensi [MIT license](LICENSE).
 
-## Support
+## Dukungan
 
-For support and questions, please contact the development team.
+Untuk dukungan dan pertanyaan, silakan hubungi tim development.

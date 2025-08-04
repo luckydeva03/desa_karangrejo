@@ -122,7 +122,7 @@ class SettingsSeeder extends Seeder
             ],
             [
                 'key' => 'footer_developer',
-                'value' => 'Developed with ❤️ by Tim IT Desa',
+                'value' => 'Developed By Lucky Deva I Tendean',
                 'type' => 'text',
                 'group' => 'footer',
                 'label' => 'Developer Credit',
