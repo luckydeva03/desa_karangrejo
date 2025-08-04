@@ -2,6 +2,12 @@
 
 Website berbasis Laravel untuk administrasi dan portal informasi Desa Karangrejo.
 
+
+
+Uploading 2025-08-04 15-50-49.mp4…
+
+
+
 ## Tentang Aplikasi
 
 Aplikasi Laravel 12 yang dibangun untuk manajemen administrasi desa dengan fitur:
