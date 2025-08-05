@@ -1,6 +1,6 @@
 # Website Desa Karangrejo
 
-Website berbasis Laravel untuk administrasi dan portal informasi Desa Karangrejo.
+Website berbasis Laravel untuk digitalisasi administrasi dan portal informasi Desa Karangrejo, Ujungpangkah.
 
 
 
